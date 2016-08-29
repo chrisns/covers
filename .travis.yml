@@ -17,6 +17,9 @@ node_js:
 - '6'
 - 'stable'
 
+before_deploy:
+  - npm --no-git-tag-version version $TRAVIS_TAG
+
 deploy:
   provider: npm
   email: chris@cns.me.uk
