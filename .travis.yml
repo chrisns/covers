@@ -15,6 +15,7 @@ before_deploy:
   - npm --no-git-tag-version version $TRAVIS_TAG
 
 deploy:
+  skip_cleanup: true
   provider: npm
   email: chris@cns.me.uk
   api_key:
