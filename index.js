@@ -1,7 +1,9 @@
 const _ = require("lodash");
 
 const getCoverage = function () {
-  return Object.keys(global).filter((k) => k.match(/\$\$cov_\d+\$\$/));
+  return Object.keys(global).filter(function (k) {
+    return k.match(/\$\$cov_\d+\$\$/)
+  });
 }
 
 var coverage = {};
