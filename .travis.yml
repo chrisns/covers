@@ -12,7 +12,7 @@ node_js:
 - 'stable'
 
 before_deploy:
-  - npm --no-git-tag-version version $TRAVIS_JOB_NUMBER
+  - npm --no-git-tag-version version 1.$TRAVIS_JOB_NUMBER
 
 deploy:
   skip_cleanup: true
