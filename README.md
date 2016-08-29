@@ -60,25 +60,18 @@ Will result in coverage results like:
 
 Instead of what would ordinarily come out:
 ```
-1x | function foo() {
-1x |   bar();
-1x |   return bar();
-   | }
-
+...
 1x | function bar() {
 2x |   return true;
    | }
-
-1x | function hello() {
-0x |   return true;
-   | }
-
-1x | module.exports = {
-   |   foo: foo,
-   |   bar: bar,
-   |   hello: hello
-   | }
+...
 ```
 
 
 This will allow you to write unit tests that test just the method you want, and continue to have integration and end-to-end testing that doesn't effect your code coverage results.
+
+## Roadmap
+- [x] nothing selector
+- [ ] selector for named functions
+- [ ] selector for anonymous functions
+- [ ] selector for es6 arrow anonymous functions
