@@ -5,7 +5,7 @@ const exampleCodePath = require.resolve(mod);
 const covers = require("../index");
 const assert = require('assert');
 
-xdescribe("Selective coverage", () => {
+xdescribe("Selective coverage", function () {
   covers(exampleCodePath + ':foo');
   it("run", function () {
     return assert(exampleCode.foo());
@@ -20,7 +20,9 @@ describe("No coverage", function () {
 });
 
 describe("Run assertions", function () {
-  var cover = global[Object.keys(global).filter((k) => k.match(/\$\$cov_\d+\$\$/))];
+  var cover = global[Object.keys(global).filter(function (k) {
+    return k.match(/\$\$cov_\d+\$\$/)
+  })];
   it('should not have recoded coverage for hello()', function () {
     assert.equal(cover[exampleCodePath].f[3], 0)
   })
