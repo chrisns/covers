@@ -1,0 +1,26 @@
+{
+  "name": "covers",
+  "version": "1.0.0",
+  "description": "Selective code coverage tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover ./node_modules/.bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisns/covers.git"
+  },
+  "author": "Chris Nesbitt-Smith <chris@cns.me.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisns/covers/issues"
+  },
+  "homepage": "https://github.com/chrisns/covers#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.2"
+  },
+  "dependencies": {
+    "lodash": "^4.15.0"
+  }
+}
