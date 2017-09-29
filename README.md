@@ -1,5 +1,7 @@
 # covers.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/chrisns/covers.svg)](https://greenkeeper.io/)
+
 It's always annoyed me trying to write tests & code in node.js that code coverage doesn't have the annotations that I was used to in [PHPUnit](https://phpunit.de/manual/current/en/appendixes.annotations.html#appendixes.annotations.covers)
 
 This is an attempt to bring some of that functionality to node.js
